@@ -1,0 +1,270 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        /* css variables */
+        
+         :root {
+            --navbar-height: 59px;
+        }
+        /* navbar: logo and image */
+        
+        #logo {
+            margin: 10px 24px;
+            /* border-radius: 350px; */
+            /* border: 2px solid blue; */
+        }
+        /* navbar :list styling  */
+        
+        #logo img {
+            height: 59px;
+            margin: 3px 6px;
+            border-radius: 25px;
+        }
+        
+        #navbar {
+            display: flex;
+            align-items: center;
+            /* margin: 0px 2px; */
+            top: 0px;
+            position: sticky;
+        }
+        
+        #navbar ul {
+            font-family: 'Schibsted Grotesk', sans-serif;
+            display: flex;
+        }
+        
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+        /* home section  */
+        
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            height: 610px;
+            /* left: 2px; */
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #home::before {
+            content: "";
+            position: absolute;
+            background: url('../img/bg-1.jpg') no-repeat center center;
+            height: 720px;
+            width: 100%;
+            z-index: -1;
+            top: 0px;
+            left: 0px;
+            opacity: 0.89;
+        }
+        
+        #home h1 {
+            color: white;
+            text-align: center;
+            font-size: 1.8rem;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        
+        #home p {
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        
+        .btn:hover {
+            background-color: grey;
+        }
+        /* services section */
+        
+        #services-container {
+            background: url('../img/services-1.jpg') no-repeat center center/cover;
+            height: fit-content;
+            position: abs;
+            opacity: 1;
+            z-index: -1;
+        }
+        
+        #services-container h1 {
+            color: white;
+        }
+        
+        #services {
+            margin: 0px;
+            /* margin: 34px; */
+            display: flex;
+            /* flex-direction: column; */
+        }
+        
+        #services .box {
+            border: 2px solid brown;
+            height: 500px;
+            margin: 20px 10px;
+            padding: 20px;
+            border-radius: 28px;
+            background-color: rgb(227, 241, 241);
+            /* padding: 14px;
+            margin: 2px 0px;
+            margin-bottom: 20px; */
+        }
+        
+        #services .box img {
+            height: 180px;
+            width: 200px;
+            padding: 10px;
+            margin: auto;
+            display: block;
+            border-radius: 10rem;
+        }
+        
+        #services .box p {
+            font-family: 'Balsamiq Sans', cursive;
+            /* padding: 25px; */
+        }
+        /* client section */
+        
+        #client-section {
+            /* height: 144px; */
+            position: relative;
+        }
+        
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url('../img/clients-2.jpg') no-repeat center center;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .client-item {
+            padding: 34px;
+        }
+        
+        #clients img {
+            height: 70px;
+            border-radius: 50px;
+        }
+        /* contact section */
+        
+        #contact {
+            position: relative;
+        }
+        
+        #contact::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* color: black; */
+            opacity: 0.89;
+            background: url('/img/contact-us.jpg') no-repeat center center/cover;
+            /* font-size: 50px; */
+        }
+        
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+        
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+        }
+        
+        #contact-box form {
+            width: 40%;
+        }
+        
+        #contact-box label {
+            font-size: 1.3rem;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        
+        footer {
+            background-color: black;
+            color: white;
+            padding: 9px 20px;
+        }
+        /* utility clasess */
+        
+        .h-primary {
+            font-size: 3.8rem;
+            font-family: 'Balsamiq Sans', cursive;
+            padding: 30px;
+        }
+        
+        .h-secondary {
+            font-size: 2.8rem;
+            padding: 12px;
+        }
+        
+        .btn {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: brown;
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        #services-container {
+            /* background-color: rgb(218, 103, 103); */
+            /* height: fit-content; */
+            /* width: fit-content; */
+            /* top: 0px;
+    left: 0px; */
+        }
